@@ -1,0 +1,16 @@
+.recipe-list__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 2.2rem 2.4rem;
+  justify-items: center;
+  padding: 3rem 1.4rem 2.8rem 1.4rem;
+  background: var(--bg-soft, #F7F6F2);
+  min-height: 600px;
+}
+@media (max-width: 800px) {
+  .recipe-list__container {
+    grid-template-columns: 1fr;
+    padding: 1.2rem 0.25rem 1.6rem 0.25rem;
+    gap: 1.35rem 0.7rem;
+  }
+}
